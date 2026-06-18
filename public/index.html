@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aria Vale · Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient animated background -->
+  <div class="bg">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <!-- Nav -->
+  <nav class="glass nav">
+    <span class="logo">AV<span class="dot">.</span></span>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#stats">Stats</a></li>
+    </ul>
+    <a class="glass btn insta" href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero" class="hero">
+    <div class="hero-inner" data-parallax>
+      <div class="hero-text reveal">
+        <p class="eyebrow">Art student · Visual creator</p>
+        <h1>Hi, I'm <span class="grad">Aria Vale</span></h1>
+        <p class="lead">I make color-soaked paintings and digital art exploring quiet moments and loud feelings.</p>
+        <div class="hero-cta">
+          <a href="#work" class="glass btn primary">View my work</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="glass btn">Follow on Instagram</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="glass photo-frame">
+          <img src="https://picsum.photos/seed/aria/640/720" alt="Aria Vale" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="glass card about reveal">
+      <h2>About</h2>
+      <p>I'm a fine-arts student fascinated by the space between traditional media and digital experimentation. My work moves between acrylics, watercolor, and illustration, always chasing a feeling rather than a likeness.</p>
+      <p>When I'm not in the studio you'll find me sketching strangers in cafés and posting works-in-progress to my Instagram.</p>
+      <ul class="tags">
+        <li>Painting</li><li>Illustration</li><li>Mixed media</li><li>Sketchbook</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="section">
+    <h2 class="section-title reveal">Selected Work</h2>
+    <div id="gallery" class="gallery"><!-- injected by app.js --></div>
+  </section>
+
+  <!-- Stats -->
+  <section id="stats" class="section">
+    <h2 class="section-title reveal">By the numbers</h2>
+    <div class="stats">
+      <div class="glass card stat reveal"><span class="num" data-count="48">0</span><p>Works created</p></div>
+      <div class="glass card stat reveal"><span class="num" data-count="12">0</span><p>Exhibitions</p></div>
+      <div class="glass card stat reveal"><span class="num" data-count="9800">0</span><p>Instagram friends</p></div>
+      <div class="glass card stat reveal"><span class="num" data-count="3">0</span><p>Years studying</p></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aria Vale · Made with care</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
