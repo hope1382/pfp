@@ -1,0 +1,14 @@
+{
+  "name": "creator-profile",
+  "version": "1.0.0",
+  "description": "Glassmorphic creator profile for an art student",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
